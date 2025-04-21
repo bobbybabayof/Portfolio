@@ -1,50 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Binyamin Babayof Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Binyamin Babayof – Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      margin: 40px;
-      line-height: 1.6;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    ul {
-      list-style-type: none;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      margin: 0;
       padding: 0;
     }
-    li {
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 2.5em;
       margin-bottom: 10px;
     }
-    a {
-      text-decoration: none;
-      color: #0066cc;
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
     }
-    a:hover {
-      text-decoration: underline;
+    .ascii-art {
+      white-space: pre;
+      font-family: monospace;
+      font-size: 10px;
+      line-height: 9px;
+      color: #aaa;
+      margin: 20px 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .item {
+      background-color: #1e1e1e;
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s ease;
+    }
+    .item:hover {
+      transform: scale(1.02);
+    }
+    .item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .item a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Binyamin Babayof</h1>
+    <p>Creative director, filmmaker, and producer. I produce live sessions, documentaries, music videos, and social content that elevates the ordinary into the meaningful. Let’s make something real.</p>
 
-  <h1>Binyamin Babayof – Project Links</h1>
-  <ul>
-    <li><a href="https://www.youtube.com/watch?v=73cZFZ05css&list=PLMJWWD0YMiZYjSA_rrloXNyKtUwgEcgj7" target="_blank">TYH Live Sessions Playlist</a></li>
-    <li><a href="https://www.youtube.com/watch?v=dCFK8W6Tu1c" target="_blank">Cooking With Faigy</a></li>
-    <li><a href="https://youtu.be/JsXZFSlwDnE?si=Nd5DXHrHIHXTSzFm" target="_blank">The Chossid And the Fly</a></li>
-    <li><a href="https://www.youtube.com/watch?v=-ak8CiQixYI" target="_blank">Shabbos Shabbos Music Video</a></li>
-    <li><a href="https://www.instagram.com/yidonthestreet/?hl=en" target="_blank">@YidOnTheStreet Instagram</a></li>
-    <li><a href="https://youtu.be/hySoWJ1c5XQ?si=knnMeTzr1dY3WaZS" target="_blank">Yid On A Trip</a></li>
-    <li><a href="https://www.instagram.com/trading_cars_gameshow/" target="_blank">@Trading_Cars_Gameshow Instagram</a></li>
-    <li><a href="https://youtu.be/4C5ALr6-26Q?si=fFKX51mhYlTmSZLv" target="_blank">In Your Light Music Video</a></li>
-  </ul>
+    <div class="ascii-art">
+      .--.     .--.<br/>
+      |o_o|   |o_o|<br/>
+      |:_/     \\_:<br/>
+     //   \\___//<br/>
+    (|     |   | )<br/>
+   /'\\_   _/`\\<br/>
+   \\___)=(___/
+    </div>
 
+    <div class="gallery">
+      <div class="item">
+        <img src="https://img.youtube.com/vi/73cZFZ05css/hqdefault.jpg" alt="TYH Live Sessions">
+        <a href="https://www.youtube.com/watch?v=73cZFZ05css&list=PLMJWWD0YMiZYjSA_rrloXNyKtUwgEcgj7" target="_blank">TYH Live Sessions Playlist</a>
+      </div>
+      <div class="item">
+        <img src="https://img.youtube.com/vi/dCFK8W6Tu1c/hqdefault.jpg" alt="Cooking With Faigy">
+        <a href="https://www.youtube.com/watch?v=dCFK8W6Tu1c" target="_blank">Cooking With Faigy</a>
+      </div>
+      <div class="item">
+        <img src="https://img.youtube.com/vi/JsXZFSlwDnE/hqdefault.jpg" alt="The Chossid And the Fly">
+        <a href="https://youtu.be/JsXZFSlwDnE?si=Nd5DXHrHIHXTSzFm" target="_blank">The Chossid And the Fly</a>
+      </div>
+      <div class="item">
+        <img src="https://img.youtube.com/vi/-ak8CiQixYI/hqdefault.jpg" alt="Shabbos Shabbos">
+        <a href="https://www.youtube.com/watch?v=-ak8CiQixYI" target="_blank">Shabbos Shabbos</a>
+      </div>
+      <div class="item">
+        <img src="https://img.youtube.com/vi/hySoWJ1c5XQ/hqdefault.jpg" alt="Yid On A Trip">
+        <a href="https://youtu.be/hySoWJ1c5XQ?si=knnMeTzr1dY3WaZS" target="_blank">Yid On A Trip</a>
+      </div>
+      <div class="item">
+        <img src="https://img.youtube.com/vi/4C5ALr6-26Q/hqdefault.jpg" alt="In Your Light">
+        <a href="https://youtu.be/4C5ALr6-26Q?si=fFKX51mhYlTmSZLv" target="_blank">In Your Light</a>
+      </div>
+      <div class="item">
+        <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/stJvTF6S3Qy.png" alt="@YidOnTheStreet">
+        <a href="https://www.instagram.com/yidonthestreet/?hl=en" target="_blank">@YidOnTheStreet</a>
+      </div>
+      <div class="item">
+        <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/stJvTF6S3Qy.png" alt="@Trading_Cars_Gameshow">
+        <a href="https://www.instagram.com/trading_cars_gameshow/" target="_blank">@Trading_Cars_Gameshow</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+
